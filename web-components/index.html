@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Web Components</title>
+    <style>
+      html {
+        --color-primary: lightblue;
+      }
+
+      div {
+        border: 2px solid orange;
+      }
+
+      uc-tooltip {
+        border: 1px solid blue;
+        padding: 0.15 rem;
+      }
+    </style>
+    <script src="tooltip.js"></script>
+    <script src="confirm-link.js"></script>
+  </head>
+  <body>
+    <p>
+      <uc-tooltip class="important" text="Web componets is a set of standard"
+        ><span class="highlight">Web Components</span></uc-tooltip
+      >
+    </p>
+    <p><uc-tooltip>Here you go!</uc-tooltip></p>
+    <div>This does not get the shadow!</div>
+
+    <a is="uc-confirm-link" href="https://www.google.com" target="_blank"
+      >Go to Google!</a
+    >
+  </body>
+</html>
